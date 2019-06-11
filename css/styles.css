@@ -16,8 +16,18 @@ body {
   height: 100px;
 }
 
+#Sbm_words {
+  width: 400px;
+  height: 100px;
+}
+
 #source {
   border-radius: 10px;
+}
+
+#words_input {
+  border-radius: 10px;
+  width: 1400px;
 }
 
 .s0 {
