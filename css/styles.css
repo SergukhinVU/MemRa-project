@@ -11,14 +11,20 @@ body {
   font-size: 50px;
 }
 
+#words {
+  font-size: 70px;
+}
+
 #Sbm_name {
   width: 400px;
   height: 100px;
+
 }
 
 #Sbm_words {
-  width: 400px;
-  height: 100px;
+  width: 650px;
+  height: 150px;
+  font-size: 70px;
 }
 
 #source {
@@ -27,6 +33,7 @@ body {
 
 #words_input {
   border-radius: 10px;
+  height: 150px;
   width: 1400px;
 }
 
@@ -51,6 +58,7 @@ body {
 }
 
 .s4 {
+  font-size: 75px;
   width: 1500px;
   margin: auto;
 }
