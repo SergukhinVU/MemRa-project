@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Data input select</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <div class="s3">
+        <form id="f">
+            <p><b>Демо: Как правильно записывать слова и словосочетания</b></p>
+            <p class="w3-container w3-border words">
+                <span>have music lessons, cupboard, sandwich, play football, play the piano, pineapple, go to the park</span>
+                <br>
+                <span id="note">note: use a comma to separate the words.</span>
+            </p>
+            <p>
+                <label for="single_words">Single words:</label>
+                <input name="single_words"
+                    class="w3-button w3-white w3-border w3-border-green w3-round-large input-text" type="text"
+                    value="cupboard, sandwich, pineapple" placeholder="Single words" readonly>
+            </p>
+            <p>
+                <label for="two_words">Two word phrases:</label>
+                <input name="two_words" class="w3-button w3-white w3-border w3-border-green w3-round-large input-text"
+                    value="play football" type="text" placeholder="Two word phrases" readonly>
+            </p>
+            <p>
+                <label for="three_words">Three word phrases:</label>
+                <input name="three_words" class="w3-button w3-white w3-border w3-border-green w3-round-large input-text"
+                    value="have music lesson, play the piano" type="text" placeholder="Three word phrases" readonly>
+            </p>
+            <p>
+                <label for="four_words">Four word phrases:</label>
+                <input name="four_words" class="w3-button w3-white w3-border w3-border-green w3-round-large input-text"
+                    value="go to the park" type="text" placeholder="Four word phrases" readonly></p>
+            <p><input class="w3-button w3-white w3-border w3-border-green w3-round-large" type="submit" value="Submit">
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>
