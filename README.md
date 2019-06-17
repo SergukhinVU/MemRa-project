@@ -1,1 +1,2 @@
-# Welcome to the MemRa project! To start local server type "npm start".
+# Welcome to the MemRa project! 
+# To start local server type "npm start".
