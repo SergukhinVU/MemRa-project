@@ -1,0 +1,31 @@
+{
+  "name": "memra-project",
+  "version": "1.0.0",
+  "description": "Mulitlevel interactive system of memorizing English words and phrases",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "handlebars": "^4.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node ./src/index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/memra-english-project/MemRa-project.git"
+  },
+  "keywords": [
+    "english",
+    "learn"
+  ],
+  "author": "MemRa-dev team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/memra-english-project/MemRa-project/issues"
+  },
+  "homepage": "https://github.com/memra-english-project/MemRa-project#readme"
+}
