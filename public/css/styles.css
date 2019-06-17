@@ -16,15 +16,22 @@ body {
 }
 
 #Sbm_name {
-  width: 400px;
+  width: 500px;
   height: 100px;
-
+  border-radius: 20px;
 }
 
 #Sbm_words {
   width: 650px;
   height: 150px;
-  font-size: 70px;
+  font-size: 50px;
+}
+
+#Sbm_text {
+  width: 550px;
+  height: 100px;
+  font-size: 55px;
+  margin-bottom: 30px;
 }
 
 #source {
@@ -35,7 +42,114 @@ body {
   font-size: 65px;
   border-radius: 10px;
   height: 150px;
-  width: 1400px;
+  width: 1500px;
+}
+
+#o_btn {
+  width: 50px;
+  height: 70px;
+  background-color: white;
+  border-color: black;
+  text-align: center;
+  margin:auto;
+  border-radius: 10px;
+  font-size: 50px;
+}
+
+#o_btn:hover {
+    background-color: #b3b3b3;
+}
+
+#u_btn {
+  width: 50px;
+  height: 70px;
+  background-color: white;
+  border-color: black;
+  text-align: center;
+  margin:auto;
+  border-radius: 10px;
+  font-size: 50px;
+}
+
+#u_btn:hover {
+    background-color: #b3b3b3;
+}
+
+#a_btn {
+  width: 50px;
+  height: 70px;
+  background-color: white;
+  border-color: black;
+  text-align: center;
+  margin:auto;
+  border-radius: 10px;
+  font-size: 50px;
+}
+
+#a_btn:hover {
+    background-color: #b3b3b3;
+}
+
+#u2_btn {
+  width: 50px;
+  height: 70px;
+  background-color: white;
+  border-color: black;
+  text-align: center;
+  margin:auto;
+  border-radius: 10px;
+  font-size: 50px;
+}
+
+#u2_btn:hover {
+    background-color: #b3b3b3;
+}
+
+#c_btn {
+  width: 50px;
+  height: 70px;
+  background-color: white;
+  border-color: black;
+  text-align: center;
+  margin:auto;
+  border-radius: 10px;
+  font-size: 50px;
+}
+
+#c_btn:hover {
+    background-color: #b3b3b3;
+}
+
+#ch_btn {
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  border-color: black;
+  text-align: center;
+  margin:auto;
+  border-radius: 10px;
+  font-size: 50px;
+}
+
+#ch_btn:hover {
+    background-color: #b3b3b3;
+}
+
+#task_words {
+  width: 1500px;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 10px;
+  background-color:  #33ff99;
+  border-color: black;
+  font-size: 50px;
+}
+
+.w_input {
+  width: 500px;
+  height: 70px;
+  border-radius: 10px;
 }
 
 .s_err {
@@ -49,26 +163,41 @@ body {
   margin: auto;
 }
 
-
 .s1 {
   width: 900px;
   margin: auto;
 }
 
 .s2 {
-  width: 900px;
+  background-color: #33ff99;
+  /*#b3ff99*/;
+  width: 450px;
   margin: auto;
+  text-align: center;
+  border-radius: 10px;
+  border-color: black;
 }
 
 .s3 {
-  width: 900px;
+  width: 450px;
   margin: auto;
+  text-align: center;
+  border-radius: 10px;
 }
 
 .s4 {
   font-size: 75px;
-  width: 1500px;
+  width: 1900px;
   margin: auto;
+}
+
+.s5 {
+  background-color: #33ff99;
+  width: 1200px;
+  margin: auto;
+  border-radius: 10px;
+  border-color: black;
+  /*text-align: center; */
 }
 
 .w3-button.w3-round-large {
@@ -85,8 +214,14 @@ p{
   margin: 30px 0;
 }
 
-p .words{
+p.words{
   line-height: 1px;
+}
+
+#this {
+  width: 550px;
+  height: 100px;
+  margin: auto;
 }
 
 #note{

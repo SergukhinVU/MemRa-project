@@ -1,6 +1,8 @@
 const express = require('express');
 let routes = express.Router();
 var user_info = {};
+var ch_letter = "";
+var ins_words;
 
 routes.get('/', function(req, res, next) {
   res.render('index');
@@ -47,6 +49,24 @@ routes.post('/demo1', function(req, res) {
   user_info.dat_input = req.body.input;
   //console.log(user_info); // Оставил для контроля
   res.render('demo1');
+});
+
+routes.get('/choose_letter', function(req, res, next) {
+  res.render('choose_letter');
+});
+routes.post('/next', function(req, res) {
+  ch_letter += req.body.letter;
+  console.log(ch_letter);
+  res.render('choose_letter');
+});
+
+routes.get('/insert_words', function(req, res, next) {
+  res.render('insert_words');
+});
+routes.post('/next2', function(req, res) {
+  ins_words = req.body.txt;
+  console.log(ins_words);
+  res.render('insert_words');
 });
 
 routes.get('*', function(req, res, next) {

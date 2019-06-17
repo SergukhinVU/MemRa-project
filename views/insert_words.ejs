@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Choose correct letter</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="public/css/styles.css">
+    <script>
+      function CheckAnswer() {
+        document.location.href = "http://localhost:3000/insert_words"
+      }
+    </script>
+  </head>
+  <body>
+    <div class="w3-container w3-teal">
+      <h1>Расставь слова и словосочетания по предложениям</h1>
+    </div>
+    <div class="s4">
+      <div id = "task_words" class="w3-white w3-border w3-border-black w3-round-large">
+        <p>have music lessons, cupboard, sandwich, play football, play the piano, pineapple, go to the park</p>
+      </div>
+      <form id = "f" method="post" action="next2">
+        <div class="s5">
+          <ul>
+            <li><p>I have a <input id="sandwich_input" class="w_input" name="txt" type="text" placeholder="Введите текст"> for lunch</p></li>
+            <li><p>I <input id="music_input" class="w_input" name="txt" type="text" placeholder="Введите текст"> after school</p></li>
+            <li><p>I don't <input id="park_input" class="w_input" name="txt" type="text" placeholder="Введите текст"></p></li>
+            <li><p>I usually eat <input id="pineapple_input" class="w_input" name="txt" type="text" placeholder="Введите текст"></p></li>
+            <li><p>I <input id="football_input" class="w_input" name="txt" type="text" placeholder="Введите текст"> with my friends</p></li>
+            <li><p>There is a <input id="cupboard_input" class="w_input" name="txt" type="text" placeholder="Введите текст"> in the kitchen</p></li>
+          </ul>
+        </div>
+        <p id="this"><input id="Sbm_text" onclick="CheckAnswer()" class="w3-button w3-white w3-border w3-border-black w3-round" type="submit" value = "Подтвердить"></p>
+      </form>
+    </div>
+  </body>
+</html>
