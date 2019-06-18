@@ -13,13 +13,13 @@
   </head>
   <body>
     <div class="w3-container w3-teal">
-      <h1>Выбери правильную букву из предложенных:</h1>
+      <h1>Выбери правильную букву из предложенных</h1>
     </div>
     <div class="s3">
-      <form id = "f" method="post" action="next">
+      <form id = "f">
         <div class="s2">
-          <p>s<input id="o_btn" name="letter" type="submit" value = "o">\<input id="u_btn" name="letter" type="submit" value = "u">fa</p>
-          <p>s<input id="a_btn" name="letter" type="submit" value = "a">\<input id="u2_btn" name="letter" type="submit" value = "u">ndwi<input id="c_btn" name="letter" type="submit" value = "c">\<input id="ch_btn" name="letter" type="submit" value = "ch"></p>
+          <p>s<input id="o_btn" onclick="this.disabled=true; document.getElementById('u_btn').disabled = false" name="letter" class = "chl_buttn" type="submit" value = "o">\<input id="u_btn" class = "chl_buttn" onclick="this.disabled=true; document.getElementById('o_btn').disabled = false" name="letter" type="submit" value = "u">fa</p>
+          <p>s<input id="a_btn" class = "chl_buttn" onclick="this.disabled=true; document.getElementById('u2_btn').disabled = false" name="letter" type="submit" value = "a">\<input id="u2_btn" class = "chl_buttn" onclick="this.disabled=true; document.getElementById('a_btn').disabled = false" name="letter" type="submit" value = "u">ndwi<input id="c_btn" class = "chl_buttn" onclick="this.disabled=true; document.getElementById('ch_btn').disabled = false" name="letter" type="submit" value = "c">\<input id="ch_btn" onclick="this.disabled=true; document.getElementById('c_btn').disabled = false" name="letter" type="submit" value = "ch"></p>
         </div>
         <p><input id="Sbm_name" onclick="CheckAnswer()" class="w3-button w3-white w3-border w3-border-black w3-round" type="button" value = "Подтвердить"></p>
       </form>

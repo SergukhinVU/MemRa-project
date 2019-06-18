@@ -2,7 +2,9 @@ const express = require('express');
 let routes = express.Router();
 var user_info = {};
 var ch_letter = "";
-var ins_words;
+var correct_words = ['sandwich', 'have music lessons', 'go to the park', 'pineapple', 'play football', 'cupboard'];
+var ins_words = [];
+var err_numb = 0;
 
 routes.get('/', function(req, res, next) {
   res.render('index');
@@ -63,15 +65,26 @@ routes.post('/next', function(req, res) {
 routes.get('/insert_words', function(req, res, next) {
   res.render('insert_words');
 });
-routes.post('/next2', function(req, res) {
+routes.post('/results', function(req, res) {
   ins_words = req.body.txt;
-  console.log(ins_words);
-  res.render('insert_words');
+  words_cmp(ins_words);
+  res.render('results', {err_numb: err_numb});
+});
+
+routes.get('/results', function(req, res, next) {
+  res.render('results', {err_numb: err_numb});
 });
 
 routes.get('*', function(req, res, next) {
   res.status(404);
   res.render('error404');
 });
+
+function words_cmp(ins_words) {
+  for (var i = 0; i < ins_words.length; i++) {
+    if (ins_words[i] != correct_words[i])
+      err_numb++;
+  }
+}
 
 module.exports = routes;

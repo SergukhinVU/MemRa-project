@@ -60,6 +60,10 @@ body {
     background-color: #b3b3b3;
 }
 
+#o_btn:disabled{
+  color: #990000;
+}
+
 #u_btn {
   width: 50px;
   height: 70px;
@@ -73,6 +77,10 @@ body {
 
 #u_btn:hover {
     background-color: #b3b3b3;
+}
+
+#u_btn:disabled{
+  color: blue;
 }
 
 #a_btn {
@@ -90,6 +98,10 @@ body {
     background-color: #b3b3b3;
 }
 
+#a_btn:disabled{
+  color: blue;
+}
+
 #u2_btn {
   width: 50px;
   height: 70px;
@@ -103,6 +115,10 @@ body {
 
 #u2_btn:hover {
     background-color: #b3b3b3;
+}
+
+#u2_btn:disabled{
+  color: blue;
 }
 
 #c_btn {
@@ -120,6 +136,10 @@ body {
     background-color: #b3b3b3;
 }
 
+#c_btn:disabled{
+  color: blue;
+}
+
 #ch_btn {
   width: 70px;
   height: 70px;
@@ -135,6 +155,10 @@ body {
     background-color: #b3b3b3;
 }
 
+#ch_btn:disabled{
+  color: blue;
+}
+
 #task_words {
   width: 1500px;
   margin: auto;
@@ -144,6 +168,15 @@ body {
   background-color:  #33ff99;
   border-color: black;
   font-size: 50px;
+}
+
+#c_btn:disabled{
+  color: blue;
+}
+
+.chl_buttn:disabled {
+  font-color: black;
+  background: blue;
 }
 
 .w_input {
@@ -156,6 +189,15 @@ body {
   font-size: 50px;
   width: 600px;
   margin: auto;
+}
+
+.s_res {
+  font-size: 50px;
+  width: 650px;
+  margin: auto;
+  background-color: #33ff99;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .s0 {
@@ -222,6 +264,7 @@ p.words{
   width: 550px;
   height: 100px;
   margin: auto;
+  margin-bottom: 20px;
 }
 
 #note{
