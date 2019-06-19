@@ -22,9 +22,10 @@ body {
 }
 
 #Sbm_words {
-  width: 650px;
-  height: 150px;
+  width: 400px;
+  height: 80px;
   font-size: 50px;
+  border-radius: 20px;
 }
 
 #Sbm_text {
@@ -46,8 +47,6 @@ body {
 }
 
 #o_btn {
-  width: 50px;
-  height: 70px;
   background-color: white;
   border-color: black;
   text-align: center;
@@ -61,12 +60,10 @@ body {
 }
 
 #o_btn:disabled{
-  color: #990000;
+  color: blue;
 }
 
 #u_btn {
-  width: 50px;
-  height: 70px;
   background-color: white;
   border-color: black;
   text-align: center;
@@ -84,8 +81,6 @@ body {
 }
 
 #a_btn {
-  width: 50px;
-  height: 70px;
   background-color: white;
   border-color: black;
   text-align: center;
@@ -103,8 +98,6 @@ body {
 }
 
 #u2_btn {
-  width: 50px;
-  height: 70px;
   background-color: white;
   border-color: black;
   text-align: center;
@@ -122,8 +115,6 @@ body {
 }
 
 #c_btn {
-  width: 50px;
-  height: 70px;
   background-color: white;
   border-color: black;
   text-align: center;
@@ -141,8 +132,6 @@ body {
 }
 
 #ch_btn {
-  width: 70px;
-  height: 70px;
   background-color: white;
   border-color: black;
   text-align: center;

@@ -56,22 +56,21 @@ routes.post('/demo1', function(req, res) {
 routes.get('/choose_letter', function(req, res, next) {
   res.render('choose_letter');
 });
-routes.post('/next', function(req, res) {
-  ch_letter += req.body.letter;
-  console.log(ch_letter);
-  res.render('choose_letter');
-});
 
 routes.get('/insert_words', function(req, res, next) {
   res.render('insert_words');
 });
-routes.post('/results', function(req, res) {
-  ins_words = req.body.txt;
-  words_cmp(ins_words);
-  res.render('results', {err_numb: err_numb});
+routes.post('/insert_words', function(req, res) {
+  // TO DO
+  res.render('insert_words');
 });
 
 routes.get('/results', function(req, res, next) {
+  res.render('results', {err_numb: err_numb});
+});
+routes.post('/results', function(req, res) {
+  ins_words = req.body.txt;
+  words_cmp(ins_words);
   res.render('results', {err_numb: err_numb});
 });
 
