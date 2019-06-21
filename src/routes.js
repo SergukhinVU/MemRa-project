@@ -68,9 +68,18 @@ routes.post('/insert_words', function(req, res) {
 routes.get('/results', function(req, res, next) {
   res.render('results', {err_numb: err_numb});
 });
-routes.post('/results', function(req, res) {
+routes.post('/choose_image', function(req, res) {
   ins_words = req.body.txt;
   words_cmp(ins_words);
+  res.render('choose_image');
+});
+
+routes.get('/choose_image', function(req, res, next) {
+  res.render('choose_image');
+});
+
+routes.get('/bad', function(req, res, next) {
+  err_numb++;
   res.render('results', {err_numb: err_numb});
 });
 

@@ -53,6 +53,7 @@ body {
   margin:auto;
   border-radius: 10px;
   font-size: 50px;
+  padding: 0px;
 }
 
 #o_btn:hover {
@@ -163,6 +164,15 @@ body {
   color: blue;
 }
 
+#img_ch {
+  width: 500px;
+  height: 500px;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
 .chl_buttn:disabled {
   font-color: black;
   background: blue;
@@ -229,6 +239,25 @@ body {
   border-radius: 10px;
   border-color: black;
   /*text-align: center; */
+}
+
+.s6 {
+  background-color: #33ff99;
+  width: 1035px;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 10px;
+  border-color: black;
+  /*text-align: center; */
+}
+
+.im {
+  background-color: white;
+  width: 520px;
+  height: 520px;
+  margin: auto;
+  border-radius: 10px;
+  border-color: black;
 }
 
 .w3-button.w3-round-large {
