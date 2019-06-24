@@ -16,8 +16,6 @@ body {
 }
 
 #Sbm_name {
-  width: 500px;
-  height: 100px;
   border-radius: 20px;
 }
 
@@ -49,11 +47,10 @@ body {
   margin:auto;
   border-radius: 10px;
   font-size: 80px;
-  padding: 0px;
 }
 
 #o_btn:hover {
-    background-color: #b3b3b3;
+  background-color: #b3b3b3;
 }
 
 #o_btn:disabled{
@@ -176,8 +173,8 @@ body {
 }
 
 .w_input {
-  width: 500px;
-  height: 70px;
+  width: 600px;
+  height: 80px;
   border-radius: 10px;
 }
 
@@ -189,7 +186,7 @@ body {
 
 .s_res {
   font-size: 80px;
-  width: 650px;
+  width: 900px;
   margin: auto;
   background-color: #33ff99;
   border-radius: 10px;
@@ -197,7 +194,7 @@ body {
 }
 
 .s0 {
-  width: 550px;
+  width: 900px;
   margin: auto;
 }
 
