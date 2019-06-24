@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome to the MemRa system!</title>
+    <script src="public/js/menu.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/css/styles.css">
+  </head>
+  <body>
+    <div class="w3-container w3-teal">
+      <h1>MemRa. Multilevel interactive system of memorizing English words and phrases</h1>
+    </div>
+    <div class="s0">
+      <form id = "f" method="post" action="language_level">
+        <label class="w3-text-black"><b>Введите ваше имя:</b></label><br>
+        <script>
+           read(document.getElementById('source'));
+        </script>
+        <input id="source" name="userName" type="text">
+        <p><input id = "Sbm_name" onclick="store(source)" class="w3-button w3-white w3-border w3-border-black w3-round-large" type="submit" value = "Начать учиться"></p>
+      </form>
+    </div>
+  </body>
+</html>
