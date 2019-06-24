@@ -53,6 +53,28 @@ routes.post('/demo1', function(req, res) {
   res.render('demo1');
 });
 
+
+routes.get('/demo_translate', function(req, res, next) {
+    res.render('demo_translate');
+});
+routes.post('/demo_translate', function(req, res) {
+//    if(!req.body) console.log("ERROR POST");
+//    user_info.dat_input = req.body.input;  не разобрался, для чего это
+    res.render('demo_translate');
+});
+
+routes.get('/demo_snake', function(req, res, next) {
+    res.render('demo_snake');
+});
+routes.post('/demo_translate', function(req, res) {
+    res.render('demo_snake');
+});
+
+
+routes.post('/choose_letter', function(req, res) {
+    res.render('choose_letter');
+});
+
 routes.get('/choose_letter', function(req, res, next) {
   res.render('choose_letter');
 });

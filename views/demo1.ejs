@@ -4,41 +4,56 @@
 <head>
     <meta charset="utf-8">
     <title>Data input select</title>
+    <script>
+        function Demo_Fill_Slots()
+        {
+           document.getElementById("demo_single_words").value="cupboard, sandwich, pineapple";
+           document.getElementById("demo_two_words").value="play football";
+           document.getElementById("demo_three_words").value="have music lesson, play the piano";
+           document.getElementById("demo_four_words").value="go to the park";
+        }
+    </script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="public/css/styles.css">
 
 </head>
 
 <body>
-    <div class="s1">
-        <form id="f">
+    <div class="sdemo">
+        <form id="f" method="post" action="demo_translate">
             <p><b>Демо: Как правильно записывать слова и словосочетания</b></p>
-            <p class="w3-container w3-border words">
+            <p class="w3-container w3-border ">
                 <span>have music lessons, cupboard, sandwich, play football, play the piano, pineapple, go to the park</span>
                 <br>
                 <span id="note">note: use a comma to separate the words.</span>
             </p>
             <p>
+                <input  name="list_of_words" class="w3-button w3-white w3-border w3-border-green w3-round-large input-text"
+                       value="" type="text">
+            </p>
+            <input class="w3-button w3-white w3-border w3-border-black  w3-round-large" type="button" value="Заполнить" onclick="Demo_Fill_Slots()">
+            </p>
+            <p>
                 <label for="single_words">Single words:</label>
-                <input name="single_words"
-                    class="w3-button w3-white w3-border w3-border-green w3-round-large input-text" type="text"
-                    value="cupboard, sandwich, pineapple" placeholder="Single words" readonly>
+                <input id="demo_single_words" name="single_words"
+                    class=" slot w3-button w3-red w3-border w3-border-red w3-round-large input-text" type="text"
+                    value="" placeholder="Single words" readonly>
             </p>
             <p>
                 <label for="two_words">Two word phrases:</label>
-                <input name="two_words" class="w3-button w3-white w3-border w3-border-green w3-round-large input-text"
-                    value="play football" type="text" placeholder="Two word phrases" readonly>
+                <input id="demo_two_words"  name="two_words" class=" slot w3-button w3-blue w3-border w3-border-blue w3-round-large input-text"
+                    value="" type="text" placeholder="Two word phrases" readonly>
             </p>
             <p>
                 <label for="three_words">Three word phrases:</label>
-                <input name="three_words" class="w3-button w3-white w3-border w3-border-green w3-round-large input-text"
-                    value="have music lesson, play the piano" type="text" placeholder="Three word phrases" readonly>
+                <input id="demo_three_words" name="three_words" class=" slot w3-button w3-green w3-border w3-border-green w3-round-large input-text"
+                    value="" type="text" placeholder="Three word phrases" readonly>
             </p>
             <p>
                 <label for="four_words">Four word phrases:</label>
-                <input name="four_words" class="w3-button w3-white w3-border w3-border-green w3-round-large input-text"
-                    value="go to the park" type="text" placeholder="Four word phrases" readonly></p>
-            <p><input class="w3-button w3-white w3-border w3-border-green w3-round-large" type="submit" value="Submit">
+                <input id="demo_four_words" name="four_words" class=" slot w3-button w3-purple w3-border w3-border-purple w3-text-white w3-round-large input-text"
+                    value="" type="text" placeholder="Four word phrases" readonly></p>
+            <p><input class="  w3-button w3-white w3-border w3-border-black w3-round-large" type="submit" value="Продолжить">
             </p>
         </form>
     </div>
