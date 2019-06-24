@@ -1,5 +1,5 @@
 h1 {
-  font-size: 70px;
+  font-size: 75px;
   text-align: center;
 }
 
@@ -8,7 +8,7 @@ body {
 }
 
 #f {
-  font-size: 50px;
+  font-size: 80px;
 }
 
 #words {
@@ -22,17 +22,13 @@ body {
 }
 
 #Sbm_words {
-  width: 400px;
-  height: 80px;
-  font-size: 50px;
+  font-size: 80px;
   border-radius: 20px;
 }
 
 #Sbm_text {
-  width: 550px;
-  height: 100px;
-  font-size: 55px;
-  margin-bottom: 30px;
+  font-size: 75px;
+  border-radius: 10px;
 }
 
 #source {
@@ -52,7 +48,7 @@ body {
   text-align: center;
   margin:auto;
   border-radius: 10px;
-  font-size: 50px;
+  font-size: 80px;
   padding: 0px;
 }
 
@@ -70,7 +66,7 @@ body {
   text-align: center;
   margin:auto;
   border-radius: 10px;
-  font-size: 50px;
+  font-size: 80px;
 }
 
 #u_btn:hover {
@@ -87,7 +83,7 @@ body {
   text-align: center;
   margin:auto;
   border-radius: 10px;
-  font-size: 50px;
+  font-size: 80px;
 }
 
 #a_btn:hover {
@@ -104,7 +100,7 @@ body {
   text-align: center;
   margin:auto;
   border-radius: 10px;
-  font-size: 50px;
+  font-size: 80px;
 }
 
 #u2_btn:hover {
@@ -121,7 +117,7 @@ body {
   text-align: center;
   margin:auto;
   border-radius: 10px;
-  font-size: 50px;
+  font-size: 80px;
 }
 
 #c_btn:hover {
@@ -138,7 +134,7 @@ body {
   text-align: center;
   margin:auto;
   border-radius: 10px;
-  font-size: 50px;
+  font-size: 80px;
 }
 
 #ch_btn:hover {
@@ -150,14 +146,14 @@ body {
 }
 
 #task_words {
-  width: 1500px;
+  width: 900px;
   margin: auto;
   margin-top: 20px;
   text-align: center;
   border-radius: 10px;
   background-color:  #33ff99;
   border-color: black;
-  font-size: 50px;
+  font-size: 80px;
 }
 
 #c_btn:disabled{
@@ -165,8 +161,8 @@ body {
 }
 
 #img_ch {
-  width: 500px;
-  height: 500px;
+  width: 432px;
+  height: 432px;
   border-radius: 20px;
   margin-top: 10px;
   margin-left: 10px;
@@ -176,6 +172,7 @@ body {
 .chl_buttn:disabled {
   font-color: black;
   background: blue;
+  font-size: 80px;
 }
 
 .w_input {
@@ -185,13 +182,13 @@ body {
 }
 
 .s_err {
-  font-size: 50px;
+  font-size: 80px;
   width: 600px;
   margin: auto;
 }
 
 .s_res {
-  font-size: 50px;
+  font-size: 80px;
   width: 650px;
   margin: auto;
   background-color: #33ff99;
@@ -200,7 +197,7 @@ body {
 }
 
 .s0 {
-  width: 700px;
+  width: 550px;
   margin: auto;
 }
 
@@ -212,15 +209,16 @@ body {
 .s2 {
   background-color: #33ff99;
   /*#b3ff99*/;
-  width: 450px;
+  width: 700px;
   margin: auto;
   text-align: center;
   border-radius: 10px;
   border-color: black;
+  font-size: 80px;
 }
 
 .s3 {
-  width: 450px;
+  width: 700px;
   margin: auto;
   text-align: center;
   border-radius: 10px;
@@ -232,14 +230,15 @@ body {
 
 .s4 {
   font-size: 75px;
-  width: 1900px;
+  width: 900px;
   margin: auto;
 }
 
 .s5 {
   background-color: #33ff99;
-  width: 1200px;
+  padding-left: 20px;
   margin: auto;
+  width: 900px;
   border-radius: 10px;
   border-color: black;
   /*text-align: center; */
@@ -254,7 +253,7 @@ body {
 
 .s6 {
   background-color: #33ff99;
-  width: 1035px;
+  width: 900px;
   margin: auto;
   margin-top: 10px;
   border-radius: 10px;

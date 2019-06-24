@@ -43,14 +43,14 @@ routes.post('/data_input', function(req, res) {
 });
 
 
-routes.get('/demo1', function(req, res, next) {
-  res.render('demo1');
+routes.get('/demo_input', function(req, res, next) {
+  res.render('demo_input');
 });
-routes.post('/demo1', function(req, res) {
+routes.post('/demo_input', function(req, res) {
   if(!req.body) console.log("ERROR POST");
   user_info.dat_input = req.body.input;
   //console.log(user_info); // Оставил для контроля
-  res.render('demo1');
+  res.render('demo_input');
 });
 
 
