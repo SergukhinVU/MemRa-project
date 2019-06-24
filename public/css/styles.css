@@ -8,7 +8,7 @@ body {
 }
 
 #f {
-  font-size: 50px;
+  font-size: 70px;
 }
 
 #words {
@@ -16,22 +16,20 @@ body {
 }
 
 #Sbm_name {
-  width: 500px;
+  width: 700px;
   height: 100px;
   border-radius: 20px;
 }
 
 #Sbm_words {
-  width: 400px;
-  height: 80px;
-  font-size: 50px;
+  font-size: 70px;
   border-radius: 20px;
 }
 
 #Sbm_text {
-  width: 550px;
+  width: 570px;
   height: 100px;
-  font-size: 55px;
+  font-size: 70px;
   margin-bottom: 30px;
 }
 
@@ -42,8 +40,8 @@ body {
 #words_input {
   font-size: 65px;
   border-radius: 10px;
-  height: 150px;
-  width: 1500px;
+  height: 170px;
+  width: 1700px;
 }
 
 #o_btn {
@@ -52,7 +50,7 @@ body {
   text-align: center;
   margin:auto;
   border-radius: 10px;
-  font-size: 50px;
+  font-size: 70px;
   padding: 0px;
 }
 
@@ -70,7 +68,7 @@ body {
   text-align: center;
   margin:auto;
   border-radius: 10px;
-  font-size: 50px;
+  font-size: 70px
 }
 
 #u_btn:hover {
@@ -87,7 +85,7 @@ body {
   text-align: center;
   margin:auto;
   border-radius: 10px;
-  font-size: 50px;
+  font-size: 70px;
 }
 
 #a_btn:hover {
@@ -104,7 +102,7 @@ body {
   text-align: center;
   margin:auto;
   border-radius: 10px;
-  font-size: 50px;
+  font-size: 70px;
 }
 
 #u2_btn:hover {
@@ -121,7 +119,7 @@ body {
   text-align: center;
   margin:auto;
   border-radius: 10px;
-  font-size: 50px;
+  font-size: 70px;
 }
 
 #c_btn:hover {
@@ -138,7 +136,7 @@ body {
   text-align: center;
   margin:auto;
   border-radius: 10px;
-  font-size: 50px;
+  font-size: 70px;
 }
 
 #ch_btn:hover {
@@ -150,14 +148,14 @@ body {
 }
 
 #task_words {
-  width: 1500px;
+  width: 1700px;
   margin: auto;
   margin-top: 20px;
   text-align: center;
   border-radius: 10px;
   background-color:  #33ff99;
   border-color: black;
-  font-size: 50px;
+  font-size: 70px;
 }
 
 #c_btn:disabled{
@@ -179,20 +177,20 @@ body {
 }
 
 .w_input {
-  width: 500px;
+  width: 700px;
   height: 70px;
   border-radius: 10px;
 }
 
 .s_err {
-  font-size: 50px;
+  font-size: 70px;
   width: 600px;
   margin: auto;
 }
 
 .s_res {
-  font-size: 50px;
-  width: 650px;
+  font-size: 70px;
+  width: 670px;
   margin: auto;
   background-color: #33ff99;
   border-radius: 10px;
@@ -212,18 +210,20 @@ body {
 .s2 {
   background-color: #33ff99;
   /*#b3ff99*/;
-  width: 450px;
+  width: 800px;
   margin: auto;
   text-align: center;
   border-radius: 10px;
   border-color: black;
+  font-size: 70px;
 }
 
 .s3 {
-  width: 450px;
+  width: 800px;
   margin: auto;
   text-align: center;
   border-radius: 10px;
+  font-size: 70px;
 }
 
 .s4 {
@@ -279,7 +279,7 @@ p.words{
 }
 
 #this {
-  width: 550px;
+  width: 570px;
   height: 100px;
   margin: auto;
   margin-bottom: 20px;
