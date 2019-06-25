@@ -90,9 +90,27 @@ routes.post('/insert_words', function(req, res) {
 routes.get('/results', function(req, res, next) {
   res.render('results', {err_numb: err_numb});
 });
-routes.post('/choose_image', function(req, res) {
+
+
+routes.get('/page10', function(req, res, next) {
+  res.render('page10');
+});
+
+routes.post('/page10', function(req, res) {
   ins_words = req.body.txt;
   words_cmp(ins_words);
+  res.render('page10');
+});
+
+routes.get('/page13', function(req, res, next) {
+  res.render('page13');
+});
+
+routes.post('/page13', function(req, res) {
+  res.render('page13');
+});
+
+routes.post('/choose_image', function(req, res) {
   res.render('choose_image');
 });
 
