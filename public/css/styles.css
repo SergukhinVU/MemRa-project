@@ -288,6 +288,10 @@ p.words{
   line-height: 1px;
 }
 
+.header-text {
+  font-size: 50px;
+}
+
 #this {
   width: 550px;
   height: 100px;

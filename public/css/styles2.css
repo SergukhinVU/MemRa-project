@@ -156,7 +156,7 @@ html {
         /* margin: 20% auto; */
         width: 90%;
     }
-    
+
 }
 
 /* Small devices (landscape phones, 576px and down) */
@@ -171,7 +171,7 @@ html {
     }
 
     .header-text{
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
     .header-text-level, .header-text-memory{
         font-size: 1.2rem;

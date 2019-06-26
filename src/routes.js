@@ -77,7 +77,8 @@ routes.get('/demo_translate', function (req, res) {
 
 routes.post('/demo_translate', function (req, res) {
   // GET DATA FROM PAGE
-  res.redirect('/choose_letter');
+  res.render('demo_snake');
+  //res.redirect('/choose_letter');
 });
 
 // routes.get('/demo_snake', function(req, res) {
