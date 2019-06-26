@@ -6,11 +6,18 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="public/css/styles.css">
     <script>
-      function CheckAnswer() {
-        if (document.getElementById('o_btn').disabled == true){
-          // TO DO
+    function CheckAnswer() {
+      var elements = document.getElementById("f").elements;
+      var elem = {
+        val_arr = [];
+      }
+      for (var i = 0, element; element = elements[i++];) {
+        if (element.disabled === true) {
+          elem.val_arr[i] = element.value;
         }
       }
+      alert(elem);
+    }
     </script>
   </head>
   <body>
@@ -23,7 +30,7 @@
           <p>s<input id="o_btn" onclick="this.disabled=true; document.getElementById('u_btn').disabled = false" name="letter" class = "chl_buttn" type="submit" value = "o">\<input id="u_btn" class = "chl_buttn" onclick="this.disabled=true; document.getElementById('o_btn').disabled = false" name="letter" type="submit" value = "u">fa</p>
           <p>s<input id="a_btn" class = "chl_buttn" onclick="this.disabled=true; document.getElementById('u2_btn').disabled = false" name="letter" type="submit" value = "a">\<input id="u2_btn" class = "chl_buttn" onclick="this.disabled=true; document.getElementById('a_btn').disabled = false" name="letter" type="submit" value = "u">ndwi<input id="c_btn" class = "chl_buttn" onclick="this.disabled=true; document.getElementById('ch_btn').disabled = false" name="letter" type="submit" value = "c">\<input id="ch_btn" onclick="this.disabled=true; document.getElementById('c_btn').disabled = false" name="letter" type="submit" value = "ch"></p>
         </div>
-        <p><input id="Sbm_words" class="w3-button w3-white w3-border w3-border-black w3-round" type="submit" value = "Подтвердить"></p>
+        <p><input id="Sbm_words" onclick="CheckAnswer()" class="w3-button w3-white w3-border w3-border-black w3-round" type="submit" value = "Подтвердить"></p>
       </form>
     </div>
   </body>

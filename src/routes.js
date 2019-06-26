@@ -4,6 +4,8 @@ var user_info = {};
 var ch_letter = "";
 var correct_words = ['sandwich', 'have music lessons', 'go to the park', 'pineapple', 'play football', 'cupboard'];
 var ins_words = [];
+var correct_letters = ['o', 'a', 'ch'];
+var ins_letters = [];
 var err_numb = 0;
 
 
@@ -96,6 +98,9 @@ routes.get('/choose_letter', function (req, res) {
 
 routes.post('/choose_letter', function (req, res) {
   // GET DATA FROM PAGE
+  ins_letters = req.body.letter;
+  //console.log(ins_letters);
+  //inp_cmp(ins_letters);
   res.redirect('/insert_words');
 });
 
@@ -108,7 +113,7 @@ routes.get('/insert_words', function (req, res) {
 routes.post('/insert_words', function (req, res) {
   // GET DATA FROM PAGE
   ins_words = req.body.txt;
-  words_cmp(ins_words);
+  inp_cmp(ins_words);
   res.redirect('/page10');
 });
 
@@ -163,7 +168,7 @@ routes.get('*', function (req, res) {
   res.render('error404');
 });
 
-function words_cmp(ins_words) {
+function inp_cmp(ins_words) {
   for (var i = 0; i < ins_words.length; i++) {
     if (ins_words[i] != correct_words[i])
       err_numb++;
