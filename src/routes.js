@@ -14,6 +14,11 @@ routes.get('/', function (req, res) {
   res.render('index');
 });
 
+routes.get('/index', function (req, res) {
+  // SEND DATA TO PAGE
+  res.render('index');
+});
+
 routes.post('/', function (req, res) {
   // GET DATA FROM PAGE
   if (!req.body) console.log("ERROR POST");
