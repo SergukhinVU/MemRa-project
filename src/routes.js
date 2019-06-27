@@ -15,7 +15,7 @@ routes.get('/', function (req, res) {
 });
 
 routes.get('/index', function (req, res) {
-  // SEND DATA TO PAGE
+  err_numb = 0;
   res.render('index');
 });
 
@@ -25,13 +25,6 @@ routes.post('/', function (req, res) {
   user_info.user_name = req.body.userName;
   res.redirect('/language_level');
 });
-
-routes.post('/index', function (req, res) {
-  // GET DATA FROM PAGE
-  err_numb = 0
-  res.render('index');
-});
-
 
 routes.get('/language_level', function (req, res) {
   // SEND DATA TO PAGE
