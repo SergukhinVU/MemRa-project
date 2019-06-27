@@ -6,18 +6,18 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="public/css/styles.css">
     <script>
-    function CheckAnswer() {
-      var elements = document.getElementById("f").elements;
-      var elem = {
-        val_arr = [];
-      }
-      for (var i = 0, element; element = elements[i++];) {
-        if (element.disabled === true) {
-          elem.val_arr[i] = element.value;
+      function CheckAnswer() {
+        var elements = document.getElementById("f").elements;
+        var elem = {
+          val_arr = [];
         }
+        for (var i = 0, element; element = elements[i++];) {
+          if (element.disabled === true) {
+            elem.val_arr[i] = element.value;
+          }
+        }
+        alert(elem);
       }
-      alert(elem);
-    }
     </script>
   </head>
   <body>
