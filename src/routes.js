@@ -3,6 +3,7 @@ let routes = express.Router();
 var user_info = {};
 var ch_letter = "";
 var correct_words = ['sandwich', 'have music lessons', 'go to the park', 'pineapple', 'play football', 'cupboard'];
+var correct_snake = "cupboard play football sandwich play the piano go to the park pineapple";
 var ins_words = [];
 var correct_letters = ['o', 'a', 'ch'];
 var ins_letters = [];
@@ -89,6 +90,14 @@ routes.post('/demo_translate', function (req, res) {
 //     res.render('demo_snake');
 // });
 
+routes.post('/demo_snake', function (req, res) {
+    // GET DATA FROM PAGE
+    res.redirect('/choose_letter');
+    user_snake = req.body.text;
+    check = snake_cmp(user_snake);
+    console.log(check);
+    console.log(user_snake);
+});
 
 routes.get('/choose_letter', function (req, res) {
   // SEND DATA TO PAGE
@@ -172,6 +181,16 @@ function inp_cmp(ins_words) {
     if (ins_words[i] != correct_words[i])
       err_numb++;
   }
+}
+
+function snake_cmp(user_snake) {
+  if (user_snake != correct_snake)
+  {
+    err_numb++;
+    return 1
+  }
+  else
+    return 0;
 }
 
 module.exports = routes;
