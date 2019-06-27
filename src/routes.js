@@ -10,11 +10,6 @@ var err_numb = 0;
 
 
 routes.get('/', function (req, res) {
-  // SEND DATA TO PAGE
-  res.render('index');
-});
-
-routes.get('/index', function (req, res) {
   err_numb = 0;
   res.render('index');
 });
